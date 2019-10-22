@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 
 class ProductItem extends Component {
     render() {
+        var { index, product } = this.props;
         return (
             <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>123</td>
-                <td>123</td>
+                <td>{index}</td>
+                <td>{index}</td>
+                <td>{product.name}</td>
+                <td>{product.price}</td>
                 <td>
                     <span className="label label-danger">True</span>
                 </td>
